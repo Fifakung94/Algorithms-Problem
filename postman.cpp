@@ -29,14 +29,6 @@ int main() {
     while (!pq.empty()) {
         int d = pq.top().first; 
         int u = pq.top().second;
-		 
-		if(u != T){
-			cout << u << " -> "; 
-		}
-		else{
-			cout << u << " ";
-		}
-		
         pq.pop();
 
         if (u == T) break;
@@ -54,6 +46,6 @@ int main() {
 		}
     }
 
-    cout << "= " << dist[T] << "\n";
+    cout << dist[T] << "\n";
     return 0;
 }
